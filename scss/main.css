@@ -128,6 +128,9 @@ header .nav-mb li a:hover {
   position: relative;
   text-align: center;
 }
+#welcome .nav-welcome {
+  display: none;
+}
 #welcome img {
   width: 100%;
   height: 100vh;
@@ -476,5 +479,37 @@ header .nav-mb li a:hover {
      right: 20px;
      left: 130px;
    }
-   #people
+   #people {
+     padding: 40px 30px 20px;
+     background: url('../img/people/people-bg-desktop.jpg') no-repeat;
+     background-position: center;
+     background-size: contain;
+
+   }
+   #people .members {
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 20px;
+   }
+
+   #work .projects {
+     grid-template-columns: repeat(4, 1fr);
+   }
+
+   #career .thetime {
+     display: none;
+   }
+   #career h3, h2, hr {
+     top: 40px;
+   }
+   #career hr {
+    border: 2px solid #80d0f0;
+     position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 22%;
+   }
+   #career a {
+    padding: 10px 20px;
+    font-size: 2vw;
+   }
  }
