@@ -25,7 +25,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#work">Word</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -40,12 +40,37 @@
         </div>
     </header>
     <section id="welcome">
-        <img src="img/welcome/welcome_mobile.jpg" alt="">
+        <picture>
+            <source media="(min-width: 600px)" srcset="img/welcome/welcome-desktop.jpg">
+            <img src="img/welcome/welcome_mobile.jpg" alt="">
+        </picture>
+        <hr class='des'>
         <p>Being the Trusted Innovative Digital Communications Agency that efficiently designs Consumer Experience across channels
             with high-performance human capital in each market of Indochina</p>
+        <ul class="nav-welcome">
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li>
+                <a href="#work">WORK</a>
+            </li>
+            <li>
+                <a href="#people">PEOPLE</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+            <li>
+                <a href="#career">CAREER</a>
+            </li>
+        </ul>
     </section>
     <section id="about">
-        <img src="img/about/about_mobile.jpg" alt="">
+        <picture>
+            <source media="(min-width: 992px)" srcset="img/about/about-desktop.jpg">
+            <img src="img/about/about_mobile.jpg" alt="">
+        </picture>
+
     </section>
     <section id="slide">
         <p>Our
@@ -82,23 +107,31 @@
                 <img src="img/logo/10.png" alt="">
             </li>
         </div>
+
+        <div class="see">
+            <img class="slide-1" src="img/logo/slide-1.jpg" alt="">
+            <img class='slide-2' src="img/logo/slide-2.jpg" alt="">
+        </div>
     </section>
     <section id="practice">
-        <img src="img/practice/practice_mobile.png" alt="">
-        <h3>We practice
-            <br>
-            <small>Integrated Digital Solution (IDS).</small>
-        </h3>
-        <p> IMC mindset inherited from the Group, we take a
-            <span class="cl-blue">further step in digital playing field.</span>
-        </p>
-        <p> We take
-            <span class="cl-blue">well-integrated moves </span> to bridge the here-and-there gaps of online and offline communication.
-        </p>
-        <p> And we end up
-            <span class="cl-blue">winning Target Audience’s heart </span>
-            in a unique and insightful way.
-        </p>
+        <img class='practice-mb' src="img/practice/practice-desktop.png" alt="">
+        <img class="practice-des" src="img/practice/practice_mobile.png" alt="">
+        <div class="content">
+            <h3>We practice
+                <br>
+                <small>Integrated Digital Solution (IDS).</small>
+            </h3>
+            <p> IMC mindset inherited from the Group, we take a
+                <span class="cl-blue">further step in digital playing field.</span>
+            </p>
+            <p> We take
+                <span class="cl-blue">well-integrated moves </span> to bridge the here-and-there gaps of online and offline communication.
+            </p>
+            <p> And we end up
+                <span class="cl-blue">winning Target Audience’s heart </span>
+                in a unique and insightful way.
+            </p>
+        </div>
     </section>
     <section id="people">
         <h2>Key</h2>
@@ -268,7 +301,10 @@
         </ul>
     </section>
     <section id="career">
-        <img src="img/career/bg_mobile.jpg" alt="">
+        <picture>
+            <source media="(min-width: 992px)" srcset="img/career/career-desktop.jpg">
+            <img src="img/career/bg_mobile.jpg" alt="">
+        </picture>
         <h3>Career</h3>
         <h2>JOIN US</h2>
         <div>
@@ -305,7 +341,10 @@
         </ul>
 
         <p class='map'> ~ We know a few nice places around ~</p>
-        <img src="img/career/map_mobile.jpg" alt="">
+        <picture>
+            <source media="(min-width: 992px)" srcset="img/career/map-desktop.jpg">
+            <img src="img/career/map_mobile.jpg" alt="">
+        </picture>
 
     </section>
 

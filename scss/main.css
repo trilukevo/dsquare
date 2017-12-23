@@ -16,6 +16,9 @@ a {
 li {
   list-style: none;
 }
+img {
+  width: 100%;
+}
 body {
   font-size: var(--font-size);
 }
@@ -30,7 +33,7 @@ body {
 /*HEADER MOBILE*/
 
 header {
-  display: block;
+  display: none;
   z-index: 1000;
   position: fixed;
   background: transparent;
@@ -134,6 +137,9 @@ header .nav-mb li a:hover {
   position: absolute;
   top: 50%;
 }
+#welcome .des {
+  display: none;
+}
 /*END SECTION 1*/
 /*SECTION 2: ABOUT*/
 #about {
@@ -167,6 +173,9 @@ header .nav-mb li a:hover {
   text-align: center;
   margin-top: -20px;
 }
+#slide .slide-1, .slide-2 {
+  display: none;
+}
 /*END SECTION 3*/
 
 /*SECTION 4: PRACTICE*/
@@ -181,6 +190,9 @@ header .nav-mb li a:hover {
   width: 70%;
   display: block;
   margin: 0 auto;
+}
+#practice .practice-des {
+  display: none;
 }
 #practice span {
   color: var(--theme-color);
@@ -400,3 +412,69 @@ header .nav-mb li a:hover {
   width: 100px;
 }
  /*# sourceMappingURL= main.css.map */
+
+ @media screen and (min-width: 992px){
+   #welcome p {
+     max-width: 660px;
+     left: 50%;
+     transform: translate(-50%);
+     font-size: 18px;
+   }
+   #welcome .des {
+     display: block;
+    border: 1px solid #fff;
+    margin: 20px auto 30px;
+    display: block;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 61%;
+   }
+   #welcome .nav-welcome {
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     max-width: 700px;
+     top: 70%;
+   }
+   #welcome .nav-welcome li {
+     display: inline-block;
+     margin-left: 20px;
+   }
+   #welcome .nav-welcome li a {
+     color: var(--font-color);
+     transition: all 0.5s;
+   }
+   #welcome .nav-welcome li a:hover {
+     padding-bottom: 10px;
+     border-bottom: 1.5px solid #fff;
+   }
+   #slide {
+     height: 100%;
+   }
+   #slide .slide{
+    display: none;
+   }
+   #slide p {
+     margin-top: -40px;
+   }
+   #slide .slide-1, .slide-2 {
+     display: block;
+   }
+   #practice .practice-mb{
+     display: none;
+   }
+   #practice .practice-des {
+     display: inline-block;
+     width: 40%;
+   }
+   #practice .content {display: inline-block;
+     width: 40%;
+     position: relative;
+     top: -50px;
+     right: 20px;
+     left: 130px;
+   }
+   #people
+ }
