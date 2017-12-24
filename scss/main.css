@@ -3,6 +3,7 @@
   --font-weight: 700;
   --font-color: #fff;
   --theme-color: #3687C7;
+  font-family: tahoma;
 }
 * {
   margin: 0;
@@ -33,20 +34,17 @@ body {
 /*HEADER MOBILE*/
 
 header {
-  display: none;
-  z-index: 1000;
-  position: fixed;
-  background: transparent;
   text-align: center;
   width: 100%;
-  height: 100%;
   color: var(--font-color);
+  position: absolute;
 }
 header .icon {
   width: 50px;
   height: 50px;
-  position: relative;
+  position: fixed;
   float: right;
+  z-index: 10000;
 }
 header .icon .hamburger {
   width: 25px;
@@ -74,20 +72,25 @@ header .icon .hamburger {
   top: 8px;
 }
 header img {
-  position: absolute;
+  position: fixed;
     text-align: center;
     margin: 0 auto;
     left: 50%;
     top: 10%;
     transform: translate(-50%,-10%);
+    width: 10%;
+    z-index: 100;
 }
 header .nav-mb {
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  z-index: 10;
   width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,.85);
+  padding-top: 27%;
 }
 header .nav-mb li {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 header .nav-mb li a {
   font-size: var(--font-size);
@@ -114,6 +117,7 @@ header .nav-mb li a:hover {
 }
 .nav-mb-wrapper {
   display: none;
+  background:rgba(0,0,0,.85);
 }
 .show-background {
   background: rgba(0,0,0,.85) !important;
@@ -139,6 +143,8 @@ header .nav-mb li a:hover {
   color: var(--font-color);
   position: absolute;
   top: 50%;
+  padding: 0 20px;
+  font-size: 16px;
 }
 #welcome .des {
   display: none;
@@ -160,21 +166,22 @@ header .nav-mb li a:hover {
   position: relative;
   text-align: center;
   background: #E6E6E6;
-  height: 130px;
-  padding-top: 45px;
+  height: 20%;
+  padding: 50px 0;
 }
 #slide p {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 49px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  padding: 17px 10px 0;
+  padding: 10px 9px 0;
   color: var(--font-color);
   background: var(--theme-color);
   text-align: center;
-  margin-top: -20px;
+  margin-top: -25px;
+  font-size: 12px;
 }
 #slide .slide-1, .slide-2 {
   display: none;
@@ -366,6 +373,7 @@ header .nav-mb li a:hover {
 #contact {
   position: relative;
   text-align: center;
+  padding-top: 50px;
 }
 #contact img {
   margin-top: 15px;
@@ -417,6 +425,32 @@ header .nav-mb li a:hover {
  /*# sourceMappingURL= main.css.map */
 
  @media screen and (min-width: 992px){
+  header {
+    display: block;
+  }
+  header .icon {
+    display: none;
+  }
+  .nav-des {
+    position: fixed;
+    z-index: 100;
+    color: #fff;
+    left: 60%;
+    top: 3%;
+  }
+  .nav-des li {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+  }
+  .nav-des li a {
+    transition: all 0.5s;
+    padding-bottom: 10px;
+    color: var(--font-color);
+  }
+  .nav-des li a:hover {
+    border-bottom: 1.5px solid var(--font-color);
+  }
    #welcome p {
      max-width: 660px;
      left: 50%;
@@ -435,6 +469,7 @@ header .nav-mb li a:hover {
     top: 61%;
    }
    #welcome .nav-welcome {
+     display: block;
      position: absolute;
      left: 50%;
      transform: translate(-50%);
@@ -460,7 +495,9 @@ header .nav-mb li a:hover {
     display: none;
    }
    #slide p {
-     margin-top: -40px;
+     margin-top: -30px;
+     height: 60px;
+     font-size: 16px;
    }
    #slide .slide-1, .slide-2 {
      display: block;
@@ -490,7 +527,9 @@ header .nav-mb li a:hover {
      grid-template-columns: repeat(4,1fr);
      grid-gap: 20px;
    }
-
+   #work {
+     padding-top: 50px;
+   }
    #work .projects {
      grid-template-columns: repeat(4, 1fr);
    }
