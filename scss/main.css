@@ -45,6 +45,7 @@ header .icon {
   position: fixed;
   float: right;
   z-index: 10000;
+  left: 85%;
 }
 header .icon .hamburger {
   width: 25px;
@@ -558,3 +559,18 @@ header .nav-mb li a:hover {
     font-size: 2vw;
    }
  }
+ @media screen and (min-width: 500px ) {
+   header .icon {
+      left: 88%;
+   }
+ }
+ @media screen and (min-width: 638px ) {
+  header .icon {
+     left: 90%;
+  }
+}
+@media screen and (min-width: 755px ) {
+  header .icon {
+     left: 93%;
+  }
+}

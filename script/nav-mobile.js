@@ -6,5 +6,6 @@ $(document).ready(function () {
     });
     $('.nav-mb').on('click', 'li', function () {
         $('.icon').toggleClass('active');
+        $('.nav-mb-wrapper').toggle();
     });
 });
