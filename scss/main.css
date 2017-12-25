@@ -451,6 +451,12 @@ header .nav-mb li a:hover {
   .nav-des li a:hover {
     border-bottom: 1.5px solid var(--font-color);
   }
+  .nav-des.dark li a{
+    color: Black;
+  }
+  .nav-des.show {
+    top: -200px;
+  }
    #welcome p {
      max-width: 660px;
      left: 50%;

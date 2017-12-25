@@ -38,7 +38,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="nav-des">
+        <ul class="nav-des dark show">
             <li>
                 <a href="#about">About</a>
             </li>
@@ -376,6 +376,30 @@
 
     <script src="script/dist/jquery.fancybox.min.js"></script>
     <script src="script/fancybox.js"></script>
+    <script type='text/javascript'>
+        //SCROLLLL
+        $(function () {
+            $(window).scroll(function () {
+                let ver = window.scrollY;
+                let about = $('#about').offset();
+                if (ver >= 806 && ver <= 2760) {
+                    $('.nav-des').removeClass('show');
+                    $('.nav-des').addClass('dark');
+                }
+                else if (ver >= 2810 && ver <= 3600) {
+
+                    $('.nav-des').removeClass('dark');
+                }
+                else if (ver >= 3686) {
+                    $('.nav-des').removeClass('show');
+                    $('.nav-des').addClass('dark');
+                }
+                else if (ver < 806) {
+                    $('.nav-des').addClass('show');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
