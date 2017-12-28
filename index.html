@@ -373,35 +373,9 @@
     <script type="text/javascript" src="slick/slick/slick.min.js"></script>
     <script src="script/slick.js"></script>
     <script src="script/popup.js"></script>
-
+    <script src="script/smoothscroll.js"></script>
     <script src="script/dist/jquery.fancybox.min.js"></script>
     <script src="script/fancybox.js"></script>
-    <script type='text/javascript'>
-        //SCROLLLL
-        $(function () {
-            $(window).scroll(function () {
-                let ver = window.scrollY;
-                let about = $('#about').offset().top;
-                let people = $('#people').offset().top;
-                let work = $('#work').offset()
-                    .top;
-                if (ver >= about - 50) {
-                    $('.nav-des').removeClass('show');
-                    $('.nav-des').addClass('dark');
-                }
-                if (ver >= people - 30) {
-                    $('.nav-des').removeClass('dark');
-                }
-                if (ver >= work - 50) {
-                    $('.nav-des').removeClass('show');
-                    $('.nav-des').addClass('dark');
-                }
-                if (ver < about) {
-                    $('.nav-des').addClass('show');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
