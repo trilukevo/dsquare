@@ -381,20 +381,22 @@
         $(function () {
             $(window).scroll(function () {
                 let ver = window.scrollY;
-                let about = $('#about').offset();
-                if (ver >= 806 && ver <= 2760) {
+                let about = $('#about').offset().top;
+                let people = $('#people').offset().top;
+                let work = $('#work').offset()
+                    .top;
+                if (ver >= about - 50) {
                     $('.nav-des').removeClass('show');
                     $('.nav-des').addClass('dark');
                 }
-                else if (ver >= 2810 && ver <= 3600) {
-
+                if (ver >= people - 30) {
                     $('.nav-des').removeClass('dark');
                 }
-                else if (ver >= 3686) {
+                if (ver >= work - 50) {
                     $('.nav-des').removeClass('show');
                     $('.nav-des').addClass('dark');
                 }
-                else if (ver < 806) {
+                if (ver < about) {
                     $('.nav-des').addClass('show');
                 }
             });

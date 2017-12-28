@@ -57,6 +57,12 @@ header .icon .hamburger {
   transform: translate(-50%,-50%);
   transition: 0.5s;
 }
+.hamburger.dark {
+  background: black;
+}
+.hamburger:after.dark, .hamburger:before.dark {
+  background: black;
+}
 .hamburger:before, .hamburger:after {
   content:'';
   position: absolute;
