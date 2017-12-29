@@ -69,7 +69,7 @@ header .icon .hamburger {
   background: var(--font-color);
   width: 25px;
   height: 4px;
-  transform: translate(-52%,-50%);
+  transform: translate(-50%,-50%);
   transition: 0.5s;
 }
 .hamburger:before{
@@ -579,4 +579,13 @@ header .nav-mb li a:hover {
   header .icon {
      left: 93%;
   }
+}
+@media screen and (min-width: 1200px) {
+  .nav-des {
+    left: 63%;
+  }
+  @media screen and (min-width: 1366px) {
+    .nav-des {
+      left: 65%;
+    }
 }
